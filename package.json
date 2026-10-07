@@ -1,0 +1,21 @@
+{
+  "name": "@adviverse/next",
+  "version": "0.1.0",
+  "description": "Next.js (App Router) <AdSlot /> client component for Adviverse ad slots.",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/Adviverse/next.git" },
+  "homepage": "https://github.com/Adviverse/next#readme",
+  "bugs": { "url": "https://github.com/Adviverse/next/issues" },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js", "require": "./dist/index.cjs" } },
+  "sideEffects": false,
+  "files": ["dist", "README.md"],
+  "scripts": { "build": "tsup", "typecheck": "tsc --noEmit", "test": "node --test" },
+  "keywords": ["adviverse", "ads", "next", "nextjs", "adslot"],
+  "peerDependencies": { "next": ">=13", "react": ">=18" },
+  "dependencies": { "@adviverse/element": "^0.1.0" },
+  "devDependencies": { "@types/react": "^18.3.0", "react": "^18.3.1", "react-dom": "^18.3.1", "tsup": "^8.3.0", "typescript": "^5.6.2" }
+}
